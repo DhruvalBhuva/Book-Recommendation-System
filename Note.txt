@@ -1,0 +1,15 @@
+Types of Recommendation system:
+  - Content based recommendation systems.
+
+  - Collaborative filtering (CF) recommender systems, which are a subclass of content
+  - based recommenders that make recommendations to users by collecting preferences or taste information from many users and based recommenders that use the user’s past behavior to predict what items they will like in the future.
+
+  - Hybrid Approch is combining the two types of recommenders to create hybrid models that combine both approaches.
+
+=> In this we will use Collaborative filtering
+
+=> Approch for the logic:
+- will use metrix factorization to create a matrix between users and book (Users * Book) 
+- By considering all the users result may be wired, because of can't consider rating of every users
+- To improve efficiency, here we are considering the users who having rated 200+ books (It's try and error methods to find that figure).
+- For the book constrain that, we'll consider the book having 50+ rating
